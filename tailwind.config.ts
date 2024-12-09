@@ -9,9 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#474F9A",
+        secondary: "#DB2481",
+        tertiary: "#8F99F1",
+        foreground: "#212B83",
+        whitePrimary: "#FCFCFC",
       },
+      backgroundImage: {
+        'dark-gradient': "url('/background-gradient.png')"
+      }
     },
   },
   plugins: [],
