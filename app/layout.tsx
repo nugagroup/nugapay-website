@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { GetStarted } from "./components/GetStarted";
 
 const gilroyExtrabold = localFont({
   src: "./fonts/Gilroy-Extrabold.woff",
@@ -38,7 +41,12 @@ export default function RootLayout({
       <body
         className={`${gilroyRegular.variable} ${gilroyMedium.variable} ${gilroySemibold.variable} ${gilroyBold.variable} ${gilroyExtrabold.variable} text-white antialiased`}
       >
-        {children}
+        <Navbar />
+        <main>
+          {children}
+          <GetStarted />
+        </main>
+        <Footer />
       </body>
     </html>
   );

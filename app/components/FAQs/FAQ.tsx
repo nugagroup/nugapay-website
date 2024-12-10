@@ -16,7 +16,7 @@ export const FAQ: React.FC<FAQProps> = ({ title, content }) => {
         }}
         className="mb-4 md:mb-[37px] flex min-w-[90%] items-center justify-between mx-2.5 md:mx-0"
       >
-        <p className="cursor-pointer text-base font-semibold text-foreground transition duration-300 md:text-[33px] font-[family-name:var(--font-gilroy-semibold)]">
+        <p className="cursor-pointer text-lg font-semibold text-foreground transition duration-300 md:text-[33px] font-[family-name:var(--font-gilroy-semibold)]">
           {title}
         </p>
         <div className="flex text-3xl md:text-5xl cursor-pointer justify-end transition duration-300 text-foreground">
@@ -32,7 +32,7 @@ export const FAQ: React.FC<FAQProps> = ({ title, content }) => {
       >
         <p
           aria-hidden={isActive}
-          className={`text-sm text-foreground overflow-hidden md:text-base mx-2.5 md:mx-0 font-[family-name:var(--font-gilroy-semibold)]`}
+          className={`text-sm text-foreground overflow-hidden md:text-2xl mx-2.5 md:mx-0 font-[family-name:var(--font-gilroy-semibold)]`}
         >
           {content}
         </p>

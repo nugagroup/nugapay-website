@@ -15,10 +15,10 @@ export const Footer = () => {
       label: "About Us",
       url: "/#about",
     },
-    {
-      label: "Products",
-      url: "/#products",
-    },
+    // {
+    //   label: "Products",
+    //   url: "/#products",
+    // },
     {
       label: "Contact Us",
       url: "/contact",
@@ -62,7 +62,7 @@ export const Footer = () => {
   ];
   return (
     <footer className="flex flex-col pt-[100px] md:pt-[150px] pb-9 md:pb-[60px]">
-      <div className="container px-4 lg:px-10 mx-auto grid grid-cols-12 gap-y-8 md:gap-8 justify-between">
+      <div className="container px-4 lg:px-10 mx-auto grid grid-cols-12 gap-y-8 md:gap-8 justify-between font-[family-name:var(--font-gilroy-regular)]">
         <div className="col-span-12 md:col-span-4 flex flex-col gap-12 md:mr-auto order-2 md:order-1">
           <p className="text-[#6B7280] text-xl order-2 md:order-1">
             We are evolving and rapidly advancing through our love for
@@ -77,13 +77,13 @@ export const Footer = () => {
         </div>
         <div className="col-span-12 md:col-span-3 lg:col-start-6 flex justify-between gap-4 order-1 md:order-2">
           <div>
-            <p className={` text-[#232222] text-2xl mb-7`}>Home</p>
+            <p className={`text-[#232222] text-2xl mb-7`}>Home</p>
             <ul className="flex flex-col gap-[15px]">
               {homeLinks.map((link, idx) => (
                 <li key={idx}>
                   <Link
                     href={link.url}
-                    className={` text-[#6B7280] whitespace-nowrap`}
+                    className={` text-[#6B7280] whitespace-nowrap hover:underline underline-offset-2 transition duration-200`}
                   >
                     {link.label}
                   </Link>
@@ -96,7 +96,7 @@ export const Footer = () => {
             <ul className="flex flex-col gap-[15px]">
               {developerLinks.map((link, idx) => (
                 <li key={idx}>
-                  <Link href={link.url} className={` text-[#6B7280]`}>
+                  <Link href={link.url} className={`text-[#6B7280] hover:underline underline-offset-2 transition duration-200`} target="_blank">
                     {link.label}
                   </Link>
                 </li>

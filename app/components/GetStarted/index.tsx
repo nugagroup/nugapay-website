@@ -1,4 +1,3 @@
-import { ArrowRight } from "@/app/assets/svg";
 import { Button } from "../shared/Button";
 
 export const GetStarted = () => {
@@ -11,9 +10,6 @@ export const GetStarted = () => {
           Redefine Payments and Get Started with <i className="font-[family-name:var(--font-gilroy-bold)]">NUGAPAY</i>
         </h3>
         <div className="flex flex-col md:flex-row gap-8 md:gap-[30px] justify-center items-center">
-          <Button>
-            Get Started <ArrowRight />
-          </Button>
           <Button>Download the App</Button>
         </div>
       </div>

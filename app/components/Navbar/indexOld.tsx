@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../shared/Button";
-import { CloseMenu, Menu } from "@/app/assets/svg";
+import { ChevronDown, CloseMenu, Menu, USAFlag } from "@/app/assets/svg";
 import logo from "@/app/assets/logo.png";
 
 export const Navbar = () => {
@@ -13,8 +13,8 @@ export const Navbar = () => {
     label: string;
     href: string;
     type: string;
-    variant: 'text'|'light'|'primary';
-}[] = [
+    variant?: "text" | "light" | "primary";
+  }[] = [
     { label: "Business", href: "/#business", type: "link", variant: "text" },
     { label: "Contact Us", href: "/#contact", type: "link", variant: "text" },
     { label: "Languages", href: "/#lang", type: "dropdown", variant: "text" },
@@ -27,11 +27,11 @@ export const Navbar = () => {
       className={`fixed top-0 z-50 w-full transition duration-200 bg-white`}
     >
       <nav
-        className={`relative flex justify-between items-center h-11 md:h-[88px] transition duration-200 w-full max-w-screen-2xl px-4 md:px-10 lg:px-20 mx-auto text-white`}
+        className={`relative flex justify-between items-center h-11 md:h-[88px] transition duration-200 w-full max-w-screen-2xl px-4 md:px-10 lg:px-20 mx-auto`}
       >
         <Link
           href={"/"}
-          className="flex items-center gap-1 z-50"
+          className="flex items-center gap-1 z-50 w-1/5"
         >
           <Image
             src={logo}
@@ -42,9 +42,10 @@ export const Navbar = () => {
         <ul
           className={`${
             isNavOpened ? "translate-x-0" : "-translate-x-full"
-          } md:translate-x-0 transition duration-200 text-[#171412] flex flex-col md:flex-row items-center gap-14 md:gap-5 fixed md:relative top-0 left-0 pt-28 md:pt-0 w-full md:w-auto h-screen md:h-fit bg-white md:bg-transparent bg-opacity-20 md:bg-opacity-100 backdrop-blur-md md:backdrop-blur-0`}
+          } md:translate-x-0 transition duration-200 text-[#171412] flex flex-col md:flex-row justify-center items-center gap-8 sm:gap-14 md:gap-5 fixed md:relative top-0 left-0 w-full sm:w-4/5 lg:w-3/5 h-screen md:h-fit bg-white`}
         >
-          {navLinks.map((link, idx) =>
+          {/* Center the first 3 links */}
+          {navLinks.slice(0, 3).map((link, idx) => (
             link.type === "button" ? (
               <Button
                 variant={link.variant}
@@ -53,17 +54,37 @@ export const Navbar = () => {
               >
                 {link.label}
               </Button>
-            ): link.type === 'dropdown'? (<>
-            </>): (
+            ): link.type === "dropdown" ? (
+              <Button
+                variant={'text'}
+                className="h-fit min-h-fit !p-0"
+                key={idx}
+                ariaLabel="USA Flag dropdown"
+              >
+                <USAFlag /> <ChevronDown />
+              </Button>
+            ) : (
               <li
                 key={idx}
                 onClick={() => setIsNavOpened(!isNavOpened)}
-                className={`text-[#171412] font-light md:font-medium text-[28px] md:text-base hover:underline underline-offset-4 transition duration-200`}
+                className={`text-[#171412] text-2xl md:text-sm hover:underline underline-offset-4 transition duration-200 whitespace-nowrap`}
               >
                 <Link href={link.href}>{link.label}</Link>
               </li>
             )
-          )}
+          ))}
+          {/* Render the last 2 buttons at the end */}
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-end w-full md:w-[45%] lg:w-full gap-6 sm:gap-12 md:gap-3">
+            {navLinks.slice(3).map((link, idx) => (
+              <Button
+                variant={link.variant}
+                className="h-fit min-h-10 text-2xl md:text-base"
+                key={idx}
+              >
+                {link.label}
+              </Button>
+            ))}
+          </div>
         </ul>
         <button
           onClick={() => setIsNavOpened(!isNavOpened)}
@@ -72,7 +93,7 @@ export const Navbar = () => {
           {isNavOpened ? <CloseMenu /> : <Menu />}
         </button>
       </nav>
-      <div className="w-full h-px bg-gradient-to-l from-[#474F9A] to-[#D6DAFF]"></div>
+      <div className="w-full h-px bg-gradient-to-l from-[#474F9A] to-[#D6DAFF] z-50 relative"></div>
     </header>
   );
 };

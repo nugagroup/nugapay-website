@@ -1,16 +1,14 @@
-// import { useState } from "react";
 import Image from "next/image";
-import { AppStoreIcon, PlayStoreIcon } from "../../assets/svg";
 import { Button } from "../shared/Button";
-import rocket from "@/app/assets/images/taking-off-rocket1.png";
-import padlock from "@/app/assets/images/padlock.png";
-import paymentApproved from "@/app/assets/images/payment-approved-window.png";
+import rocket from "@/app/assets/images/taking-off-rocket1.webp";
+import padlock from "@/app/assets/images/padlock.webp";
+import paymentApproved from "@/app/assets/images/payment-approved-window.webp";
 
 export const Features: React.FC = () => {
   return (
     <section
       id="features"
-      className="w-full px-4 md:px-[70px] md:w-full max-w-screen-2xl mx-auto pt-[90px] md:pt-[100px]"
+      className="w-full px-4 md:px-[70px] md:w-full max-w-screen-2xl mx-auto pt-[90px] md:pt-[100px] font-[family-name:var(--font-gilroy-regular)]"
     >
       <h2 className="mb-11 md:mb-20 text-primary text-center text-[30px] md:text-[70px] font-[family-name:var(--font-gilroy-semibold)]">
         Here&apos;s what you can achieve with{" "}
@@ -71,14 +69,9 @@ export const Features: React.FC = () => {
               resolutions, and the ease that comes with smooth transactions and
               exchanges.
             </p>
-            <div className="hidden xl:flex flex-col md:flex-row justify-start gap-6">
+            <div className="hidden md:flex justify-start gap-6">
               <Button>
-                <PlayStoreIcon />
-                Download on Google Play
-              </Button>
-              <Button>
-                <AppStoreIcon />
-                Download on App Store
+                Download the App
               </Button>
             </div>
           </div>

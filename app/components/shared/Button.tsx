@@ -48,7 +48,7 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       className={`${className} ${fullWidth ? "w-full" : "w-fit"} ${
         variantStyles[variant]
-      } px-[1.125rem] rounded-lg transition-all flex justify-center items-center py-3 gap-2 min-h-[50px]`}
+      } px-[1.125rem] rounded-lg transition-all flex justify-center items-center py-3 gap-2 min-h-[50px] font-[family-name:var(--font-gilroy-regular)]`}
     >
       {href ? (
         <Link href={href}>{loading ? <LoadingIndicator /> : children}</Link>

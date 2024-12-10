@@ -4,23 +4,23 @@ import { FAQ } from "./FAQ";
 const faqData = [
   {
     title: "What data does NUGAPAY have access to?",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perferendis vitae. Doloribus neque quo totam assumenda soluta laboriosam beatae consectetur!`,
+    content: "NUGAPAY accesses only the data necessary to provide its services, such as account and transaction details.",
   },
   {
     title: "Can I edit my data on NUGAPAY?",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perferendis vitae. Doloribus neque quo totam assumenda soluta laboriosam beatae consectetur!`,
+    content: "Yes, you can edit your personal information directly through your account settings.",
   },
   {
     title: "Can I delete my data on NUGAPAY?",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perferendis vitae. Doloribus neque quo totam assumenda soluta laboriosam beatae consectetur!`,
+    content: "Yes, you can request data deletion by contacting our support team.",
   },
   {
     title: "Is my data secure with NUGAPAY?",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perferendis vitae. Doloribus neque quo totam assumenda soluta laboriosam beatae consectetur!`,
+    content: "Yes, NUGAPAY uses advanced encryption and security protocols to protect your data.",
   },
   {
     title: "How does NUGAPAY ensure the security of transactions?",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perferendis vitae. Doloribus neque quo totam assumenda soluta laboriosam beatae consectetur!`,
+    content: "NUGAPAY uses encryption, fraud detection, and multi-factor authentication to secure all transactions.",
   },
 ];
 
