@@ -11,15 +11,15 @@ const gilroyBold = localFont({
   variable: "--font-gilroy-bold",
 })
 const gilroySemibold = localFont({
-  src: "./fonts/gilroy-Semibold.woff",
+  src: "./fonts/Gilroy-Semibold.woff",
   variable: "--font-gilroy-semibold"
 })
 const gilroyMedium = localFont({ 
-  src: "./fonts/gilroy-Medium.woff",
+  src: "./fonts/Gilroy-Medium.woff",
   variable: "--font-gilroy-medium"
  })
  const gilroyRegular = localFont({
-  src: "./fonts/gilroy-Regular.woff",
+  src: "./fonts/Gilroy-Regular.woff",
   variable: "--font-gilroy-regular"
  })
 
