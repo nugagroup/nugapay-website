@@ -4,16 +4,16 @@ import { Button } from "@/app/components/shared/Button";
 
 export default function Contact() {
   const contactData = [
-    { name: "Location", value: "Wuse, Abuja" },
+    { name: "Location", value: "Plot 1987, Umaru Musa Yaradua Expressway, Opp. Police Signboard, Lugbe, Abuja" },
     {
       name: "Email Address",
       value: "info@nugapay.com",
       url: "mailto:info@nugapay.com",
     },
     {
-      name: "Contact Numbers",
-      value: "(+234) 797-536-345",
-      url: "tel:+234797536345",
+      name: "Contact Number",
+      value: "(+234) 904-938-3881",
+      url: "tel:+2349049383881",
     },
   ];
 
