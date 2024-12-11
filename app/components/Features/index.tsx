@@ -59,11 +59,11 @@ export const Features: React.FC = () => {
           </div>
         </div>
         <div className="col-span-1 md:col-span-2 bg-primary rounded-[3.125rem] p-7 lg:p-[100px] !pb-0 flex flex-col md:flex-row gap-4 overflow-clip">
-          <div className="flex flex-col w-full sm:w-4/5 md:w-3/5 pb-7 lg:pb-[100px]">
+          <div className="flex flex-col w-full sm:w-4/5 md:w-3/5 pb-4 sm:pb-7 lg:pb-[100px]">
             <h1 className="text-[30px] md:text-[4.375rem] text-white font-medium leading-tight max-w-[11ch]">
               <span className="font-bold">POS</span> Reliability
             </h1>
-            <p className="mt-6 mb-8 text-xs md:text-xl">
+            <p className="mt-6 md:mb-8 text-xs md:text-xl">
               With NUGA Pay, card and transfer payments are accepted
               effortlessly. Enjoy instantneous settlements and payments, dispute
               resolutions, and the ease that comes with smooth transactions and

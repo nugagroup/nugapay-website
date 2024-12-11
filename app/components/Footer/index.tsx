@@ -131,7 +131,7 @@ export const Footer = () => {
           <Image
             src={logo}
             alt="Nugapay Logomark"
-            className="h-[30px] w-auto"
+            className="h-5 md:h-[30px] w-auto"
           />
           </div>
           <div className="text-[9px] md:text-lg">
