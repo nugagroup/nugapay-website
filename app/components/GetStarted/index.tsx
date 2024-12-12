@@ -1,4 +1,5 @@
 import { Button } from "../shared/Button";
+import { appLink } from "../shared/helper";
 
 export const GetStarted = () => {
   return (
@@ -10,7 +11,7 @@ export const GetStarted = () => {
           Redefine Payments and Get Started with <i className="font-[family-name:var(--font-gilroy-bold)]">NUGAPAY</i>
         </h3>
         <div className="flex flex-col md:flex-row gap-8 md:gap-[30px] justify-center items-center">
-          <Button>Download the App</Button>
+          <Button href={appLink}>Download the App</Button>
         </div>
       </div>
     </section>

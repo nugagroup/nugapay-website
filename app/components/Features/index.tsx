@@ -3,6 +3,7 @@ import { Button } from "../shared/Button";
 import rocket from "@/app/assets/images/taking-off-rocket1.webp";
 import padlock from "@/app/assets/images/padlock.webp";
 import paymentApproved from "@/app/assets/images/payment-approved-window.webp";
+import { appLink } from "../shared/helper";
 
 export const Features: React.FC = () => {
   return (
@@ -70,7 +71,7 @@ export const Features: React.FC = () => {
               exchanges.
             </p>
             <div className="hidden md:flex justify-start gap-6">
-              <Button>
+              <Button href={appLink}>
                 Download the App
               </Button>
             </div>
