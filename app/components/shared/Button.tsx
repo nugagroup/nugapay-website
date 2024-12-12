@@ -1,3 +1,4 @@
+'use client'
 import { LoadingIndicator } from "@/app/assets/svg";
 import Link from "next/link";
 import { ReactNode } from "react";
