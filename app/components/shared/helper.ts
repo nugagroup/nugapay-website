@@ -8,6 +8,6 @@ export function downloadApp() {
 
 export function dashboardLink() {
     if(typeof window !== 'undefined'){
-        window.location.href = "http://dash.uverus.com/";
+        window.location.href = "https://dash.nugapay.com/";
     }
 }
