@@ -5,7 +5,8 @@ import onlineBankingWindow from "@/app/assets/images/online-bank-window.webp";
 import passwordWindow from "@/app/assets/images/password-window.webp";
 import POSTerminal from "@/app/assets/images/POS-terminal-and-payment-options.webp";
 import { Button } from "../shared/Button";
-import { downloadApp } from "../shared/helper";
+// import { downloadApp } from "../shared/helper";
+import { dashboardLink } from "../shared/helper";
 
 export const Hero: React.FC = () => {
   return (
@@ -24,8 +25,11 @@ export const Hero: React.FC = () => {
               We are evolving and rapidly advancing through our love for innovation and creative brainstorming, which is why we have decided to create NUGA Pay.
             </p>
             <div className="flex flex-col md:flex-row gap-8 md:gap-[30px] justify-center items-center relative z-10">
-              <Button onClick={downloadApp}>
+              {/* <Button onClick={downloadApp}>
                 Download the App
+              </Button> */}
+              <Button onClick={dashboardLink}>
+                Get Started
               </Button>
             </div>
           </div>

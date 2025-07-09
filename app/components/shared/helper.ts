@@ -5,3 +5,9 @@ export function downloadApp() {
         window.open(appLink, "_self");
     }
 }
+
+export function dashboardLink() {
+    if(typeof window !== 'undefined'){
+        window.location.href = "http://dash.uverus.com/";
+    }
+}

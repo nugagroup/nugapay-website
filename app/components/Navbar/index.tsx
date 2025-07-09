@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../shared/Button";
 import logo from "@/app/assets/logo.png";
-import { downloadApp } from "../shared/helper";
+// import { downloadApp } from "../shared/helper";
+import { dashboardLink } from "../shared/helper";
 
 export const Navbar = () => {
 
@@ -24,7 +25,9 @@ export const Navbar = () => {
             className="h-[27px] md:h-10 w-auto max-w-[184px] md:max-w-[200px] order-1 md:order-2"
           />
         </Link>
-        <Button onClick={downloadApp} variant="primary" className="!min-h-10">Get the App</Button>
+        
+        {/* <Button onClick={downloadApp} variant="primary" className="!min-h-10">Get the App</Button> */}
+        <Button onClick={dashboardLink} variant="primary" className="!min-h-10">Get Started</Button>
       </nav>
       <div className="w-full h-px bg-gradient-to-l from-[#474F9A] to-[#D6DAFF]"></div>
     </header>
