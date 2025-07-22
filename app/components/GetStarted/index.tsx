@@ -1,7 +1,7 @@
 'use client'
 import { Button } from "../shared/Button";
-// import { downloadApp } from "../shared/helper";
-import { dashboardLink } from "../shared/helper";
+import { downloadApp } from "../shared/helper";
+// import { dashboardLink } from "../shared/helper";
 
 export const GetStarted = () => {
   
@@ -14,8 +14,8 @@ export const GetStarted = () => {
           Redefine Payments and Get Started with <i className="font-[family-name:var(--font-gilroy-bold)]">NUGAPAY</i>
         </h3>
         <div className="flex flex-col md:flex-row gap-8 md:gap-[30px] justify-center items-center">
-          {/* <Button onClick={downloadApp}>Download the App</Button> */}
-          <Button onClick={dashboardLink}>Get Started</Button>
+          <Button onClick={downloadApp}>Download the App</Button>
+          {/* <Button onClick={dashboardLink}>Get Started</Button> */}
         </div>
       </div>
     </section>
